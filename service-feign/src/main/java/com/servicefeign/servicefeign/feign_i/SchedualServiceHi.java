@@ -1,5 +1,6 @@
 package com.servicefeign.servicefeign.feign_i;
 
+import com.servicefeign.servicefeign.feign_i.impl.SchedualServiceHytrix;
 import org.springframework.cloud.openfeign.FeignClient;
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Param
  * @return
  **/
-@FeignClient(value = "SERVICE-HI")
+@FeignClient(value = "SERVICE-HI" , fallback = SchedualServiceHytrix.class)
 public interface SchedualServiceHi {
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
