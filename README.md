@@ -7,6 +7,6 @@ spring-cloud-bus
    spring-cloud-bus 将分布式的节点用轻量级的消息代理连接起来。可以用于广播配置文件的更改或者服务之间的通讯，也可用于监控
    在使用spring-cloud-bus之前要了解rabbitMQ  
  RabbitMq 三个问题
-   rAbbitMq是一个消息代理 用生活中的例子来说明，你将邮件投递到邮箱，邮差会负责将邮件送到指定人的手里，RabbitMQ就是邮箱，邮差，邮局的角色。
+   RabbitMq是一个消息代理 用生活中的例子来说明，你将邮件投递到邮箱，邮差会负责将邮件送到指定人的手里，RabbitMQ就是邮箱，邮差，邮局的角色。
    
    
